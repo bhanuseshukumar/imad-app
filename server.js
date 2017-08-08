@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req, res){
-    res.send('artcle-one is up and running');
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two', function(req, res){
-    res.send('artcle-two is up and running');
+    res.send('artcle-tw0 is up and running');
 });
 
 app.get('/article-three', function(req, res){
